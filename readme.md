@@ -1,6 +1,6 @@
 # goee.realy.lol
 
-A DSL and widget sets for the [GIO](https:gioui.org) immediate mode GUI library for Go.
+A DSL and widget sets for the [GIO](https://gioui.org) immediate mode GUI library for Go.
 
 ## Versioning
 
