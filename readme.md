@@ -2,6 +2,14 @@
 
 A DSL and widget sets for the [GIO](https://gioui.org) immediate mode GUI library for Go.
 
+Organised using similar principles as [realy](https://realy.lol) based on some of the patterns used in the Go standard
+library, specifically testing, using the `packagename.T` for a primary type and sometimes using other single letters
+and trying to avoid stutter and maximising the use of the automatic zero/null/empty state of structs and shifting 
+initializers into an automatic first-use invocation if possible, or otherwise using non-exported types wrapped in a
+similar-looking invocation layout otherwise (mainly maps need initializing, and have other crunchy problems with 
+concurrency that are also preferably avoided). And of course, singleton pattern is outlawed because it locks the
+resource it manages into a pattern of one per app, which is a restriction best avoided.
+
 ## Versioning
 
 This repo uses a variant of Semver that keeps the initial version number, but after that, uses numbers that 
